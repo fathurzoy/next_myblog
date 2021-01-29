@@ -14,12 +14,17 @@
   position: relative;
 }
 
+.sc_left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sc_left img{
-  width: 220px;
-  height: 220px;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   position: absolute;
-  top: 20px;
   transform: rotate(-5deg);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -33,6 +38,15 @@
   .sc_left, .sc_right{
     width: 100%;
     height: 250px;
+  }
+
+  .sc_right h3{
+    width: 100%;
+    text-align: center;
+  }
+
+  .sc_right p{
+    text-align: center;
   }
 
 }

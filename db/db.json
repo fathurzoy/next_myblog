@@ -1,0 +1,75 @@
+{
+  "home": {
+    "hero_title": "Komunitas Parkour Depok Gratis",
+    "hero_image": "/image/background.jpg",
+    "content": [
+      {
+        "id": 1,
+        "title": "Selamat datang",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1495160101476-62b90f5fc1c1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGFya291cnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "reverse": false
+      },
+      {
+        "id": 2,
+        "title": "Sejarah",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1572698099933-9301fae68fa0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fHBhcmtvdXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "reverse": true
+      }
+    ],
+    "silabus":[
+      {
+        "id": 1,
+        "title": "BackFlip",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1554889914-a5c84570ea3e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHBhcmtvdXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "id": 2,
+        "title": "FrontFlip",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1573766917336-4ce32afd1907?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZnJvbnRmbGlwfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "id": 3,
+        "title": "WallFlip",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://olahragapedia.com/wp-content/uploads/2017/07/Wall-Flip-300x181.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Vaulting",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://olahragapedia.com/wp-content/uploads/2017/07/Vaulting-300x168.jpg"
+      }
+    ]
+  },
+  "about": {
+    "hero_title": "Tentang Kami",
+    "hero_image": "/image/background.jpg",
+    "content": [
+      {
+        "id": 1,
+        "title": "Tentang Parkour Depok",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1495160101476-62b90f5fc1c1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGFya291cnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "reverse": false
+      },
+      {
+        "id": 2,
+        "title": "Kegiatan Parkour Depok",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1602424845444-60c87a5bb0fb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cGFya291cnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "reverse": true
+      },
+      {
+        "id": 3,
+        "title": "Sistem Komunitas Parkour Depok",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas ducimus delectus! Veniam distinctio illum ex vel rem blanditiis itaque.",
+        "image": "https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcmtvdXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "reverse": true
+      }
+    ]
+  }
+}

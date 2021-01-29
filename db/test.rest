@@ -1,0 +1,9 @@
+
+
+###
+GET http://localhost:8000/home
+Content-Type: application/json
+
+###
+GET http://localhost:8000/about
+Content-Type: application/json

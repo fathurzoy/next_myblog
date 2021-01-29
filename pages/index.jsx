@@ -4,7 +4,16 @@ import Head from 'next/head'
 import Divider from '../components/Divider'
 import SilabusCard from "../components/SilabusCard"
 
-export default function Home() {
+import Hero from "../components/Hero"
+import CardContent from '../components/CardContent'
+import { useEffect } from 'react'
+
+export default function Home({home_data}) {
+
+  useEffect(()=>{
+    console.log(home_data);
+  },[])
+
   return (
     <>
     <Head>
@@ -16,34 +25,20 @@ export default function Home() {
     </Head>
     {/* <Layouts> */}
       <div className={styles.container}>
-        <div className={styles.hero}>
-          <h1>Komunistas Parkour Depok Gratis</h1>
-        </div>
+        
+        <Hero title={home_data.hero_title} image={home_data.hero_image}/>
 
-        <section className={styles.wellcome}>
-          <img
-            src="https://images.unsplash.com/photo-1495160101476-62b90f5fc1c1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGFya291cnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt="section image"
-            className={styles.wellcome_image}
+
+        {home_data.content.map((e)=>(
+          <CardContent 
+            key={e.id}
+            image={e.image} 
+            title={e.title}
+            content={e.body}
+            reverse={e.reverse}
           />
-
-          <div className={styles.wellcome_content}>
-            <h3>Komunitas Parkour Gratis Untuk Semua</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Accusamus suscipit amet, animi consectetur earum iusto iste vitae
-              minima sequi, officia, recusandae molestiae quo fuga sapiente?
-              Tempore adipisci earum accusantium culpa.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              excepturi dolorem ipsa nihil odit, quod blanditiis non tempora
-              quasi. Nisi modi dicta, blanditiis officiis cupiditate aliquid
-              iusto corrupti rem. Consectetur!
-            </p>
-          </div>
-        </section>
-
+        ))}
+        
         <Divider text="HISTORY"/>
 
         <section className={styles.history}>
@@ -72,4 +67,24 @@ export default function Home() {
     {/* </Layouts> */}
     </>
   )
+}
+
+// https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering //fetching next.js
+export async function getServerSideProps() {
+  
+  const res = await fetch('http://localhost:8000/home',{
+    method: "GET",
+    mode: "cors",
+    headers:{
+      "Content-Type" : "application/json"
+    }
+  })
+  const data = await res.json()
+
+  return{
+    props:{
+      home_data: data
+    }
+  }
+
 }

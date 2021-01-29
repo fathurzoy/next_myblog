@@ -3,7 +3,12 @@ import s from  '../styles/Navbar.module.css'
 const Navbar = ()=>{
   return (
   <nav className={s.navbar}>
-    <h3 className={s.brand}>FAKUR</h3>
+    <img src="/image/logo.png" onClick={()=>{
+      window.location.href='/'
+    }}/>
+    <h3 className={s.brand} onClick={()=>{
+      window.location.href='/'
+    }}>FAKUR</h3>
     <ul className={s.menu}>
       <li><a href="/">home</a></li>
       <li><a href="/about">about</a></li>
